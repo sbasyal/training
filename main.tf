@@ -25,7 +25,7 @@ terraform {
 }
 
 
-variable "aws_access_key" {}
+vvariable "aws_access_key" {}
 variable "aws_secret_key" {}
 
 variable "region" {
