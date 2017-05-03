@@ -33,7 +33,7 @@ variable "region" {
 }
 
 variable "num" {
-  default = "2"
+  default = "3"
 }
 
 provider "aws" {
@@ -44,7 +44,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   # ...
-  count = 2
+  count = 3
   ami                    = "ami-2df66d3b"
   subnet_id              = "subnet-fe40a9a4"
   vpc_security_group_ids = ["sg-4cc10432"]
